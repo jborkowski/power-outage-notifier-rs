@@ -96,7 +96,7 @@ async fn fetch_info() -> Result<Option<String>, Box<dyn std::error::Error>> {
 	    .map(|street| format!("   - {}\n", street))
 	    .collect::<String>();
 
-	let now = Local::now().naive_local().checked_sub_days(Days::new(1)).unwrap();
+	let now = Local::now().naive_local().unwrap();
 
 	let power_outage_start = try_parse_date(inner_rows.next()).unwrap();
 	let power_outage_end = try_parse_date(inner_rows.next()).unwrap();
