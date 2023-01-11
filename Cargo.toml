@@ -14,3 +14,5 @@ google-calendar = "0.4.1"
 chrono = "0.4.23"
 telegram-bot =  { git = "https://github.com/telegram-rs/telegram-bot.git", rev = "65ad5cf" }
 tokio-stream = "0.1.11"
+sqlite = "0.30.3"
+tokio-cron-scheduler = "0.8.3"
